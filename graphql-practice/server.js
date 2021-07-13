@@ -53,15 +53,9 @@ const AuthorType = new GraphQLObjectType({
       resolve:(author)=>{
         return books.filter(book => book.authorId === author.id)
       }
-
     }
-
-
   })
 })
-
-
-
 
 const RootQuery = new GraphQLObjectType({
   name: 'Query',
